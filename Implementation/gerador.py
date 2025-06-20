@@ -19,18 +19,6 @@ def generate_instance(filename, W, n):
             value = random.randint(1, 100)  # Value between 1 and 100
             f.write(f"{weight}\t{value}\n")
 
-# Function to generate all instances
-def generate_all_instances():
-    os.makedirs(INSTANCE_DIR, exist_ok=True)
-    
-    # Experiment 1: Fixed W = 100, varying n
-    W = 100
-    n_values = [10, 20, 30, 40, 50]
-    for n in n_values:
-        for i in range(20):  # 20 instances per n
-            filename = os.path.join(INSTANCE_DIR, f"instance_n{n}_{i}.txt")
-            generate_instance(filename, W, n)
-
 # Function to generate instances (from your query)
 def generate_instance(filename, W, n):
     with open(filename, 'w') as f:
@@ -68,8 +56,6 @@ def run_algorithm(algorithm, filename):
             max_profit, selected_items, _ = knapsack_dp(filename)
         elif algorithm == "bb":
             max_profit, selected_items, _ = knapsack_bb(filename)
-        elif algorithm == "bt":
-            max_profit, selected_items, _ = knapsack_backtracking(filename)
         else:
             raise ValueError("Algoritmo desconhecido")
         
@@ -98,7 +84,7 @@ def main():
             print(f"Processando {instance}...")
 
             # Executa todos os algoritmos
-            for algo in ["dp", "bb", "bt"]:  # Adicionado backtracking
+            for algo in ["dp", "bb"]:  # sem backtracking
                 profit, items, exec_time = run_algorithm(algo, instance_path)
                 if profit is not None:
                     writer.writerow({
