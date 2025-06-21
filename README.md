@@ -11,8 +11,8 @@ O trabalho foi desenvolvido como parte da disciplina **BCC241 - Projeto e Análi
 
 ## 📚 Sumário
 
-* [Introdução](#introdução)
-* [Instalação](#instalação)
+* [Introdução](#introducao)
+* [Instalação](#instalacao)
 * [Uso](#uso)
 * [Funcionalidades](#funcionalidades)
 * [Estrutura do Projeto](#estrutura-do-projeto)
@@ -29,19 +29,13 @@ O trabalho foi desenvolvido como parte da disciplina **BCC241 - Projeto e Análi
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/knapsack-0-1.git
-   cd knapsack-0-1
+   git clone https://github.com/KayoXavier/Knapsack-0-1.git
+   cd Knapsack-0-1
+
    ```
 
 2. Certifique-se de ter Python 3 instalado.
 
-3. Instale dependências (se necessário):
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
 
 ## ▶️ Uso
 
