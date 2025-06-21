@@ -20,7 +20,6 @@ O trabalho foi desenvolvido como parte da disciplina **BCC241 - Projeto e Análi
 * [Experimentos](#experimentos)
 * [Exemplos](#exemplos)
 * [Contribuidores](#contribuidores)
-* [Licença](#licença)
 
 ---
 
